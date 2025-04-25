@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d0b25;
+    background: radial-gradient( #3f1750,rgba(0, 0, 0, 0.976));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.project-title {
+    background-color: #99097ccf;
+    box-shadow: 0px 8px 20px #8058785f;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 600px;
+    max-width: 900px;
+    height: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 12px 12px rgba(0, 0, 0, 0.764);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.active {
+    display: block;
+}
+
+
+.caption {
+    position: absolute;
+   
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    
+    color: white;
+    background-color: rgba(123, 112, 112, 0);
+    padding: 10px;
+}
+
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-60%);
+}
+
+.prev, .next {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    border-radius: 0 5px 5px 0;
+}
+
+.next {
+    border-radius: 5px 0 0 5px;
+}
+
+@media (min-width: 650px) {
+    .slider-container{
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 756px) {
+    .slide img {
+        height: 480px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .project-title {
+        font-size: 1.5rem;
+    }
+}

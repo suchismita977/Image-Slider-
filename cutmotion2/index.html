@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <main>
+        <h2 class="project-title">IMAGE SLIDER</h2>
+        
+        <div class="slider-container">
+         
+            <div class="slide active">
+                <img src="machu picchu.jpeg" alt="Machu Picchu">
+                <div class="caption">
+                    <h3>Machu Picchu</h3>
+                    <p>Ancient Incan citadel set high in the Andes Mountains</p>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="grand canyon.jpeg" alt="Grand Canyon">
+                <div class="caption">
+                    <h3>Grand Canyon</h3>
+                    <p>Steep-sided canyon carved by the Colorado River</p>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="northen.jpeg" alt="Northern Lights">
+                <div class="caption">
+                    <h3>Northern Lights</h3>
+                    <p>Natural light display in Earth's sky</p>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="beautiful-fairy-pools.jpg" alt="Northern Lights">
+                <div class="caption">
+                    <h3>Fairy-Pools</h3>
+                    <p>The Isle of Skye near Glenbrittle.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="santorini.jpeg" alt="Santorini">
+                <div class="caption">
+                    <h3>Santorini</h3>
+                    <p>Beautiful island in the Aegean Sea</p>
+                </div>
+            </div>
+            
+           
+            <div class="navigation">
+                <div class="dot active" onclick="currentSlide(0)"></div>
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+                <div class="dot" onclick="currentSlide(4)"></div>
+            </div>
+            
+        
+            <div class="buttons">
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </main>
+    
+  
+    
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
